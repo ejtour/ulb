@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="Widget.Theme.BearProject.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Widget.Theme.BearProject.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/white</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.UlB">
+        <!-- 提示背景图片 -->
+        <item name="android:windowBackground">@mipmap/img_default_splash_picture</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+</resources>

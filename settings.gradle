@@ -1,16 +1,24 @@
 pluginManagement {
     repositories {
+        apply from: 'versions.gradle'
         gradlePluginPortal()
         google()
+        jcenter()
+        maven { url 'https://repo1.maven.org/maven2/' }
         mavenCentral()
+
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
+        jcenter()
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url 'https://jitpack.io' }
         mavenCentral()
     }
 }
 rootProject.name = "UlB"
 include ':app'
+include ':common'

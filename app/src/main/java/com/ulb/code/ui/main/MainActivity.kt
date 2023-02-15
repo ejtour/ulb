@@ -1,16 +1,19 @@
-package com.ulb.code
+package com.ulb.code.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ulb.code.ui.main.MainFragment
+import androidx.fragment.app.FragmentManager
+import com.ulb.code.R
+import com.ulb.common.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
+
+    private val fragmentManager: FragmentManager by lazy { supportFragmentManager }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
+            fragmentManager.beginTransaction()
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
