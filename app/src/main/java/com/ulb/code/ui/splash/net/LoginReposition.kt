@@ -1,10 +1,9 @@
 package com.ulb.code.ui.splash.net
 
-import com.ulb.code.HttpResult
 import com.ulb.code.config.ApiServiceManager
+import com.ulb.common.net.HttpResult
 import com.ulb.code.config.UrlConfig
 import com.ulb.code.res.LoginRes
-import io.reactivex.Observable
 
 /**
  * @des 登录相关

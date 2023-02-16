@@ -40,9 +40,8 @@ class SplashActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-
 //        viewModel.loginByPsd("maidi", "tangyu", "123456a")
-
+//
 //        viewModel.loginRes.observe(this, androidx.lifecycle.Observer {
 //            UserConfig.accessToken = it.access_token
 //            splash_view.startAnimation(alphaAnimation)

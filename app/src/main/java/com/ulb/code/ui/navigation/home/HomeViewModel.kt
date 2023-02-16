@@ -1,18 +1,17 @@
-package com.ulb.code.ui.main
+package com.ulb.code.ui.navigation.home
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.ulb.code.base.BaseViewModel
-import com.ulb.code.request
+import com.ulb.common.request
 import com.ulb.code.res.UserRes
-import com.ulb.code.ui.main.net.MainReposition
+import com.ulb.code.ui.navigation.home.net.HomeReposition
+import com.ulb.common.base.BaseViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class MainViewModel : BaseViewModel() {
+class HomeViewModel : BaseViewModel() {
 
-    private val mainReposition = MainReposition()
+    private val homeReposition = HomeReposition()
 
     var nameLiveData = MutableLiveData<String>()
 
@@ -24,7 +23,7 @@ class MainViewModel : BaseViewModel() {
         viewModelScope.launch(Dispatchers.Main) {
 
             //databing 双向绑定
-            mainReposition.requestData()
+            homeReposition.requestData()
 
         }
 
@@ -32,7 +31,7 @@ class MainViewModel : BaseViewModel() {
 
     fun getUserInfo() {
 
-        request({ mainReposition.getUserInfo() }, {
+        request({ homeReposition.getUserInfo() }, {
             userRes.value = it
         })
     }

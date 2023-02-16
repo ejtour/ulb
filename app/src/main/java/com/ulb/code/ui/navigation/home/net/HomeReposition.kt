@@ -1,14 +1,14 @@
-package com.ulb.code.ui.main.net
+package com.ulb.code.ui.navigation.home.net
 
-import com.ulb.code.HttpResult
 import com.ulb.code.config.ApiServiceManager
+import com.ulb.common.net.HttpResult
 import com.ulb.code.res.UserRes
 import com.ulb.code.ui.main.TestInfo
 import retrofit2.Call
 
-class MainReposition {
+class HomeReposition {
 
-    private val service by lazy { ApiServiceManager.createApiService(IMainApi::class.java) }
+    private val service by lazy { ApiServiceManager.createApiService(IHomeApi::class.java) }
 
     fun requestData(): Call<TestInfo> {
 

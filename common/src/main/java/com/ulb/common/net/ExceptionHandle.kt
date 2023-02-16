@@ -1,4 +1,4 @@
-package com.ulb.code.base
+package com.ulb.common.net
 
 import android.net.ParseException
 import com.google.gson.JsonParseException

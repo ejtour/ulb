@@ -1,9 +1,7 @@
 package com.ulb.code.ui.splash.net
 
-import com.ulb.code.HttpResult
+import com.ulb.common.net.HttpResult
 import com.ulb.code.res.LoginRes
-import io.reactivex.Observable
-import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST

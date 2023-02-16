@@ -1,4 +1,4 @@
-package com.ulb.code
+package com.ulb.common.net
 
 data class HttpResult<T>(
     var code: String = "10001",

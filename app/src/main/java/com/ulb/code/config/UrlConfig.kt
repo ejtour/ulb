@@ -1,6 +1,8 @@
 package com.ulb.code.config
 
-class UrlConfig {
+import com.ulb.common.base.BaseConfig
+
+class UrlConfig : BaseConfig() {
 
     companion object {
         //登录相关

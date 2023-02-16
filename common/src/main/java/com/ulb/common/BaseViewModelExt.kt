@@ -1,10 +1,10 @@
-package com.ulb.code
+package com.ulb.common
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.ulb.code.base.AppException
-import com.ulb.code.base.BaseViewModel
-import com.ulb.code.base.ExceptionHandle
+import com.ulb.common.base.BaseViewModel
+import com.ulb.common.net.AppException
+import com.ulb.common.net.ExceptionHandle
+import com.ulb.common.net.HttpResult
 import com.ulb.common.utils.LogUtils
 import kotlinx.coroutines.*
 

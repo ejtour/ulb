@@ -1,7 +1,7 @@
 package com.ulb.code.config
 
 import com.google.gson.GsonBuilder
-import com.ulb.code.GsonTypeAdapterFactory
+import com.ulb.common.net.GsonTypeAdapterFactory
 import com.ulb.common.net.HttpClientFactory
 import com.ulb.common.utils.LogUtils
 import okhttp3.Cookie

@@ -1,4 +1,4 @@
-package com.ulb.code.base
+package com.ulb.common.net
 
 class AppException : Exception {
 

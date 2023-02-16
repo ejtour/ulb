@@ -1,4 +1,4 @@
-package com.ulb.code
+package com.ulb.common.net
 
 import com.google.gson.Gson
 import com.google.gson.TypeAdapter

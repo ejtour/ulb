@@ -1,4 +1,4 @@
-package com.ulb.code.base
+package com.ulb.common.base
 
 import androidx.lifecycle.ViewModel
 

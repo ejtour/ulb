@@ -58,6 +58,9 @@ dependencies {
     implementation 'com.scwang.smart:refresh-header-material:2.0.0'    //谷歌刷新头
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
+    //navigation
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
 
     implementation "androidx.room:room-runtime:2.4.3"
     implementation "androidx.room:room-paging:2.4.3"

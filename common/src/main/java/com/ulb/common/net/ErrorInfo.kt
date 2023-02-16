@@ -1,4 +1,4 @@
-package com.ulb.code.base
+package com.ulb.common.net
 
 enum class ErrorInfo(private val code: String, private val err: String) {
 
